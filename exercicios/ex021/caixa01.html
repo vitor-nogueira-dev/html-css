@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ /* box-level */
+      
+            background-color: orangered;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: grey;
+
+            /* border: 10px solid salmon; shorthand (simplificação) da tag border, insere todos os itens necessários, nesse caso nós temos as definições de tamanho(width), tipo(style) e cor(color). */
+
+            padding-top: 10px; /*cima*/
+            padding-right: 10px; /*direita*/
+            padding-bottom: 10px; /*embaixo*/
+            padding-left: 10px; /*esquerda*/
+
+            /*  padding: 10px; shorthand (simplificação) da tag padding, nesse caso todas são do mesmo tamanho, então pode se usar somente um valor para representar todos, caso não seja o mesmo valor deve se colocar, respeitando a ordem do relógio, cima(top), direita(right), baixo(bottom) e esquerda(left). Caso seja inserido somente 1 valor, ele usa o mesmo valor para todos os lados. Quando se coloca 2 valores ele usa o 1 valor para cima e o seu lado oposto e usa o 2 valor para a direita e seu lado oposto.*/ 
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            /* margin: 10px;  shorthand (simplificação) da tag margin, nesse caso todas são do mesmo tamanho, então pode se usar somente um valor para representar todos, caso não seja o mesmo valor deve se colocar, respeitando a ordem do relógio, cima(top), direita(right), baixo(bottom) e esquerda(left). Quando se coloca 2 valores ele usa o 1 valor para cima e o seu lado oposto e usa o 2 valor para a direita e seu lado oposto.*/  
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            /* outline: 5px dashed salmon; shorthand (simplificação) da tag outline, insere todos os itens necessários, nesse caso nós temos as definições de tamanho(width), tipo(style) e cor(color). */
+
+            /*  para deixar uma caixa centralizada usamos essa tag-> margin: auto;  */
+        }
+        
+        a{ /* inline-level */
+        border: 11px solid rgb(235, 119, 119);
+
+        margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>Vamos ver como tudo isso funciona</p>
+</body>
+</html>
